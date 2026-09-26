@@ -29,7 +29,7 @@ export const getTodos = async (req, res) => {
 export const updateTodo = async (req, res) => {
   try {
     const todo = await Todo.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
+       returnDocument: "after",
     });
     res.status(201).json({ message: "Todo Updated Successfully", todo });
   } catch (error) {
