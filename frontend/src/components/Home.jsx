@@ -14,7 +14,7 @@ function Home() {
   const [deletingId, setDeletingId] = useState(null);
   const [updatingId, setUpdatingId] = useState(null);
 
-  const API_URL = "http://localhost:3000";
+  const API_URL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const fetchTodos = async () => {
