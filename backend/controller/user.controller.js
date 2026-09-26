@@ -128,13 +128,12 @@ export const login = async (req, res) => {
   }
 };
 
-// LOGOUT
 export const logout = (req, res) => {
   try {
     res.clearCookie("jwt", {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       path: "/",
     });
 
