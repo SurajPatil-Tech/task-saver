@@ -28,16 +28,23 @@ function Home() {
         setTodos(response.data.todos || []);
         setError(null);
       } catch (error) {
-        console.error(error);
-        setError("Failed to fetch todos");
-        toast.error("Failed to load todos");
+        console.error("FETCH TODOS ERROR:", error);
+
+  if (error.response?.status === 401) {
+    setTodos([]);
+    setError(null);
+    navigateTo("/login", { replace: true });
+  } else {
+    setError("Failed to fetch todos");
+    toast.error("Failed to load todos");
+  }
       } finally {
         setLoading(false);
       }
     };
 
     fetchTodos();
-  }, []);
+  },[API_URL, navigateTo]);
 
   const todoCreate = async () => {
     const text = newTodo.trim();
