@@ -1,16 +1,92 @@
-# React + Vite
+# Task Saver - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Task Saver is a MERN stack todo application that allows users to manage their daily tasks. This repository contains the frontend built with React and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Visit Task Saver](https://task-saver-six.vercel.app/)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- User Registration and Login
+- JWT Authentication
+- Add New Tasks
+- Update Existing Tasks
+- Delete Tasks
+- View User Tasks
+- Responsive User Interface
+- Protected Routes
 
-## Expanding the Oxlint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React.js
+- Vite
+- Tailwind CSS
+- Axios
+- React Router
+- JavaScript
+
+## 📂 Project Structure
+
+```text
+frontend/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.jsx
+│   └── main.jsx
+├── .env
+├── package.json
+└── README.md
+```
+
+*Note: This is a simplified project structure.*
+
+## ⚙️ Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/SurajPatil-Tech/task-saver.git
+```
+
+### 2. Navigate to the Frontend Folder
+
+```bash
+cd task-saver/frontend
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env` file inside the frontend folder and add:
+
+```env
+VITE_API_URL=https://task-saver.onrender.com
+```
+
+### 5. Start the Development Server
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+## 🌐 Backend
+
+The frontend communicates with the Task Saver backend.
+
+**Backend URL:** https://task-saver.onrender.com
+
+## 👨‍💻 Author
+
+**Suraj Patil**
+
+- GitHub: [SurajPatil-Tech](https://github.com/SurajPatil-Tech)
+- LinkedIn: [Suraj Patil](https://www.linkedin.com/in/surajpatil-tech)
